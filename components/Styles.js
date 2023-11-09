@@ -2,9 +2,13 @@ import { StyleSheet } from "react-native";
 
 const LightStyle = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
+    flexGrow: 1,
     backgroundColor: '#EED6FE',
+  },
+
+  scrollView: {
+    alignItems: 'center',
+    marginTop: 15,
   },
 
   header: {
@@ -12,7 +16,7 @@ const LightStyle = StyleSheet.create({
     fontWeight: 'bold',
     color: '#7E5699',
     marginTop: 25,
-    marginBottom: 25,
+    marginBottom: 15,
   },
 
   label: {
@@ -23,7 +27,7 @@ const LightStyle = StyleSheet.create({
   },
 
   textInput: {
-    width: '65%',
+    width: 200,
     paddingLeft: 10,
     borderColor: '#7E5699',
     borderWidth: 1,
@@ -50,12 +54,11 @@ const LightStyle = StyleSheet.create({
 
   text: {
     fontSize: 20,
-    color: '#fff',
+    color: '#EED6FE',
   },
 
   result: {
     fontSize: 50,
-    color: '#7E5699',
   },
 
   thumbDarkColor: '#7E5699',
@@ -63,13 +66,21 @@ const LightStyle = StyleSheet.create({
   buttonColor: '#7E5699',
   iconColor: '#EED6FE',
   inputColor: '#fff',
-  inputText: '#7E5699'
+  inputText: '#7E5699',
+  //Result colors
+  yourOk: 'green',
+  notQuite: 'yellow',
+  yourDrunk: 'red',
+
 });
 
 const DarkStyle = StyleSheet.create({
   container: {
     ...LightStyle.container,
     backgroundColor: '#7E5699',
+  },
+  scrollView: {
+    ...LightStyle.scrollView,
   },
 
   header: {
@@ -105,16 +116,18 @@ const DarkStyle = StyleSheet.create({
 
   result: {
     ...LightStyle.result,
-    color: '#EED6FE',
   },
 
   thumbLightColor: '#7E5699',
   buttonColor: '#EED6FE',
   iconColor: '#7E5699',
   inputColor: '#fff',
-  inputText: '#7E5699'
+  inputText: '#7E5699',
+  //Result colors
+  yourOk: 'green',
+  notQuite: 'yellow',
+  yourDrunk: 'red',
 });
 
 
-
-export{DarkStyle, LightStyle};
+export { DarkStyle, LightStyle };
