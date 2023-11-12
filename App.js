@@ -57,10 +57,10 @@ export default function App() {
         <Text style={currentStyle.label}>Kirjoita painosi kilogrammoina</Text>
         <TextInput
           keyboardType='numeric'
-          value={Number(weight)}
+          value={weight}
           style={currentStyle.textInput}
-          onChangeText={setWeight} // tarkista voiko näin tehdä vai tarviiko funktion
-        />
+          onChangeText={setWeight}/>
+          
         {/* Pullot */}
         <Text style={currentStyle.label}>Juomiesi pullojen määrä</Text>
         <NumericInput
